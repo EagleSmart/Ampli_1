@@ -31,7 +31,14 @@
 
     <p> Paragraf </p>
 
-    
+    <table>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+     </tr>
+    </table>
 
 </body>
 </html>
