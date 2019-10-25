@@ -26,6 +26,7 @@
     git add *.html - svi html
     git add . - svi
 
+    git diff - sto je promijenjeno ali nije jos uvijek staged (add)
 
     -->
 
