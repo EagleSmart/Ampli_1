@@ -1,6 +1,7 @@
 <?php 
-include 'helpers.php';
+
 require_once './autoload.php';
+require_once 'Modeli/Menu/Menu.php';
 ?>
 
 <html lang="en">
@@ -21,6 +22,8 @@ require_once './autoload.php';
 
 <?php
 
-formatGetParams();
+    $menu_2 = new Menu();
+
+    $menu_2->render();
 
 ?>

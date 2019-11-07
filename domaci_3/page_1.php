@@ -1,6 +1,8 @@
 <?php 
-include 'helpers.php';
+
 require_once './autoload.php';
+require_once 'Modeli/Menu/Menu.php';
+
 ?>
 
 <html lang="en">
@@ -19,13 +21,8 @@ require_once './autoload.php';
 </html>
 
 <?php
+    $menu_1 = new Menu();
 
-formatGetParams();
-
-$test_examples = array("155.164.1.2", "127.0.0.1", "323.32.3.4", "34.325.3.4");
-
-foreach($test_examples as $addres) {
-    validateIP($addres);
-}
+    $menu_1->render();
 
 ?>
