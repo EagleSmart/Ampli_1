@@ -28,7 +28,7 @@ class MenuItem implements Renderable{
     */
     
     public function generateHref(){
-        return 'href ="'. $this->pageName . '/?' . $this->generateUrlQuery($this->params) . '"';
+        return 'href ="'. $this->pageName . '?' . $this->generateUrlQuery($this->params) . '"';
     }
 
     public function render(){
