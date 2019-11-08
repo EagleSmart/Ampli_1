@@ -1,6 +1,10 @@
 <?php
 
-require_once 'autoload.php';
+Namespace Domaci3;
+
+use Domaci3\Renderable;
+
+ require_once 'Interfejsi/Renderable.php';
 
 class MenuItem implements Renderable{
     private $label;
@@ -23,12 +27,12 @@ class MenuItem implements Renderable{
     }
     */
     
-    public function generateHref($page_name, $params){
-        return 'href ="'. $page_name . '/?' . $this->generateUrlQuery($params) . '"';
+    public function generateHref(){
+        return 'href ="'. $this->pageName . '/?' . $this->generateUrlQuery($this->params) . '"';
     }
 
     public function render(){
-        return "<a " . $this->generateHref($this->pageName, $this->params) . " \> " . $this->label . " </a>";
+        return "<a " . $this->generateHref() . " \> " . $this->label . " </a>";
     }
     
 

@@ -1,10 +1,10 @@
 <?php
 
-require_once 'autoload.php';
+namespace Domaci3;
+
+use Domaci3\MenuItem;
+
 require_once 'Modeli/MenuItem/MenuItem.php';
-
-
-
 
 class Menu implements Renderable{
 
@@ -45,6 +45,10 @@ class Menu implements Renderable{
 
         $this->items = [$this->page_1, $this->page_2, $this->homepage];
     }
+
+
+
+
 
     public function render(){
         echo " <ul> ";

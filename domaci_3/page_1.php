@@ -1,7 +1,10 @@
 <?php 
 
 require_once './autoload.php';
-require_once 'Modeli/Menu/Menu.php';
+
+use Domaci3\Renderable;
+use Domaci3\MenuItem;
+use Domaci3\Menu;
 
 ?>
 
@@ -18,9 +21,16 @@ require_once 'Modeli/Menu/Menu.php';
 </head>
 
 
+<body>
+
+    <h1>Page one</h1>
+
+</body>
+
 </html>
 
 <?php
+
     $menu_1 = new Menu();
 
     $menu_1->render();
