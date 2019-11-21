@@ -24,9 +24,9 @@ class Stack extends Collection {
     }
 
     public function pop(){
-        if(!$this->isEmpty){
+        if(!$this->isEmpty()){
 
-          $item = $this->items[$this->count];
+          $item = $this->items[$this->count-1];
           $this->count--;
           return $item; 
 
@@ -35,9 +35,9 @@ class Stack extends Collection {
         }
     }
 
-    public function getIterator(){
-      $stackIterator = new StackIterator($this);
-      return $stackIterator;
+    public function getIterator(){  // nema klase iterator (kao u zadatku) a stackiterator nasljedjuje od stacka ?
+     // $stackIterator = new StackIterator($this);
+     // return $stackIterator;
     }
 
 }

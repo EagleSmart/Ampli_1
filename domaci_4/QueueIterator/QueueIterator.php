@@ -7,20 +7,20 @@ namespace Amplitudo;
 
 class QueueIterator implements Iterator {
     
-    private $queue;
+   
 
     public function __construct($queue){
         
-        // parent::__construct($stack->item, $stack->count);
-        $this->queue = $queue;
+        parent::__construct($stack->items, $stack->count);
+       
     }
 
     public function next(){
-        return next($this->queue->items);
+        return next($this->items);
     }
 
     public function hasNext(){
-        if (next($this->queue->items) != FALSE) {return true;}
+        if (next($this->items) != FALSE) {return true;}
         else {return false;}
     }
 

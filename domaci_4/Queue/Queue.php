@@ -6,23 +6,29 @@ namespace Amplitudo;
 
 class Queue extends Collection {
     private $front;
+    private $rear;
     public function __construct($items, $count){
         parent::__construct($items, $count);
         $this->front = 0;
+        $this->rear = $count;
     }
 
     public function enqueue($item){
         try{
-          add($item, $this->count);
+          //$this->add($item, $this->count);
+          $this->items[$this->rear] = $item;
+          $this->count++;
+          $this->rear++;
         } catch(CollectionOverFlowException $e){
           echo '<h1>' . $e->getMessage() . '</h1>';
         }
     }
 
     public function dequeue(){
-        if(!$this->isEmpty) {
+        if(!$this->isEmpty()) {
            $item = $this->items[$this->front];
            $this->front++;
+           $this->count--;
            return $item;
         }
         else {return null;}

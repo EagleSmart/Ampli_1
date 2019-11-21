@@ -8,8 +8,8 @@ namespace Amplitudo;
 
 abstract class Collection implements HTMLRenderable { 
 
-    private $items; 
-    private $count;
+    protected $items; 
+    protected $count;
 
 
     public function __construct($items, $count)
