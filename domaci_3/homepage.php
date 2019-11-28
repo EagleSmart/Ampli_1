@@ -23,7 +23,7 @@ use Domaci3\Menu;
 
 <body>
 
-<h1>Homepage</h1>
+    <h1>Homepage</h1>
 
 </body>
 

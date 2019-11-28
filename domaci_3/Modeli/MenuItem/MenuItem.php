@@ -4,7 +4,7 @@ Namespace Domaci3;
 
 use Domaci3\Renderable;
 
- require_once 'Interfejsi/Renderable.php';
+ // require_once 'Interfejsi/Renderable.php';
 
 class MenuItem implements Renderable{
     private $label;

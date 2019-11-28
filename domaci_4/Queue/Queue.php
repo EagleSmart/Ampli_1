@@ -34,9 +34,9 @@ class Queue extends Collection {
         else {return null;}
     }
 
-    public function getIterator(){
-        $queueIterator = new queueIterator($this);
-        return $queueIterator;
+    public function getIterator(){ // nema klase iterator (kao u zadatku) a queueiterator nasljedjuje od queue ?
+     //   $queueIterator = new queueIterator($this);
+     //   return $queueIterator;
     }
 
 }
